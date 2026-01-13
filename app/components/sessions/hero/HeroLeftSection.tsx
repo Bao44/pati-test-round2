@@ -10,31 +10,31 @@ function HeroLeftSection() {
           <img
             className="w-full h-auto rounded-md object-cover"
             src="https://trysculptique.com/cdn/shop/files/LymoPDPImagesArtboard1_8e287aa1-576e-42b1-9a87-ce2fcdaded3a.jpg?v=1760103674"
-            alt="Main Product"
+            alt=""
           />
 
           <div className="absolute top-2 right-2 md:top-4 md:right-4 w-20 md:w-30">
             <img
               className="w-full h-auto"
               src="https://cdn.shopify.com/s/files/1/0917/5649/5191/files/nysale.png?v=1766822224"
-              alt="Sale Badge"
+              alt=""
             />
           </div>
 
           <button
             className="absolute bottom-4 left-1/2 -translate-x-1/2 md:bottom-8 md:left-1/2 md:-translate-x-1/2 
                            flex items-center gap-2 md:gap-3 
-                           bg-[#ffffffd9] border border-solid border-gray-200 rounded-full 
+                           bg-[#ffffffd9] border border-solid rounded-full 
                            px-4 py-1.5 md:px-7 md:py-2 
                            text-xs md:text-[16px] text-gray-600 font-medium 
-                           cursor-pointer whitespace-nowrap hover:bg-white transition-all shadow-sm"
+                           cursor-pointer whitespace-nowrap"
           >
             <img
               width={20}
               height={20}
               className="w-4 h-4 md:w-6 md:h-6"
               src="https://cdn.shopify.com/s/files/1/0917/5649/5191/files/leaves_1247958_1_cf2e7df4-c113-4c3a-be49-f876ec94d873.png?v=1766822629"
-              alt="Icon"
+              alt=""
             />
             Nutritional Information
           </button>
