@@ -1,6 +1,10 @@
 {
   "name": "pati-test-round2",
   "version": "0.1.0",
+  "author": {
+    "name": "Bao44",
+    "github": "https://github.com/Bao44"
+  },
   "private": true,
   "scripts": {
     "dev": "next dev",
