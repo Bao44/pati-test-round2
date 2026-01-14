@@ -72,3 +72,86 @@ export const INGREDIENTS = [
     desc: "A source of iodine and minerals that may support skin metabolism.",
   },
 ];
+
+export const LOGOS = [
+  {
+    id: 1,
+    src: "https://trysculptique.com/cdn/shop/files/layer1_500x.png?v=1752348678",
+  },
+  {
+    id: 2,
+    src: "https://trysculptique.com/cdn/shop/files/Grazia-Logo_1_500x.png?v=1752348678",
+  },
+  {
+    id: 3,
+    src: "https://trysculptique.com/cdn/shop/files/layer1_500x.png?v=1752348678",
+  },
+  {
+    id: 4,
+    src: "https://trysculptique.com/cdn/shop/files/WH_Logo_500x.png?v=1752348678",
+  },
+  {
+    id: 5,
+    src: "https://trysculptique.com/cdn/shop/files/layer1_500x.png?v=1752348678",
+  },
+  {
+    id: 6,
+    src: "https://trysculptique.com/cdn/shop/files/Grazia-Logo_1_500x.png?v=1752348678",
+  },
+  {
+    id: 7,
+    src: "https://trysculptique.com/cdn/shop/files/layer1_500x.png?v=1752348678",
+  },
+  {
+    id: 8,
+    src: "https://trysculptique.com/cdn/shop/files/WH_Logo_500x.png?v=1752348678",
+  },
+  {
+    id: 9,
+    src: "https://trysculptique.com/cdn/shop/files/layer1_500x.png?v=1752348678",
+  },
+  {
+    id: 10,
+    src: "https://trysculptique.com/cdn/shop/files/Grazia-Logo_1_500x.png?v=1752348678",
+  },
+  {
+    id: 11,
+    src: "https://trysculptique.com/cdn/shop/files/layer1_500x.png?v=1752348678",
+  },
+  {
+    id: 12,
+    src: "https://trysculptique.com/cdn/shop/files/WH_Logo_500x.png?v=1752348678",
+  },
+  {
+    id: 13,
+    src: "https://trysculptique.com/cdn/shop/files/layer1_500x.png?v=1752348678",
+  },
+  {
+    id: 14,
+    src: "https://trysculptique.com/cdn/shop/files/Grazia-Logo_1_500x.png?v=1752348678",
+  },
+  {
+    id: 15,
+    src: "https://trysculptique.com/cdn/shop/files/layer1_500x.png?v=1752348678",
+  },
+  {
+    id: 16,
+    src: "https://trysculptique.com/cdn/shop/files/WH_Logo_500x.png?v=1752348678",
+  },
+  {
+    id: 17,
+    src: "https://trysculptique.com/cdn/shop/files/layer1_500x.png?v=1752348678",
+  },
+  {
+    id: 18,
+    src: "https://trysculptique.com/cdn/shop/files/Grazia-Logo_1_500x.png?v=1752348678",
+  },
+  {
+    id: 19,
+    src: "https://trysculptique.com/cdn/shop/files/layer1_500x.png?v=1752348678",
+  },
+  {
+    id: 20,
+    src: "https://trysculptique.com/cdn/shop/files/WH_Logo_500x.png?v=1752348678",
+  },
+];

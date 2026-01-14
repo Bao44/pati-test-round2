@@ -28,7 +28,7 @@ export default function RootLayout({
   return (
     <html lang="en">
       <body
-        className={`${nunito.variable} ${lora.variable} mx-auto max-w-7xl`}
+        className={`${nunito.variable} ${lora.variable}`}
       >
         {children}
       </body>
