@@ -9,7 +9,7 @@ export default function Home() {
       <Header />
 
       {/* Hero Section */}
-      <div className="flex justify-between py-8 gap-6 max-sm:flex-col">
+      <div className="flex justify-between py-8 px-12.5 max-sm:px-3.5 gap-20 max-sm:flex-col">
         <HeroLeftSection />
         <HeroRightSection />
       </div>

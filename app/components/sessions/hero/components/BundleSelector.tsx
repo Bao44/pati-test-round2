@@ -1,60 +1,10 @@
 "use client";
 
 import { useState } from "react";
-import { Truck, BookOpen, Gift, Check, Sparkles } from "lucide-react";
+import { Truck, BookOpen, Gift } from "lucide-react";
 import { cn } from "@/lib/utils";
-
-interface BundleOption {
-  id: string;
-  title: string;
-  subtitle: string;
-  price: number;
-  originalPrice: number;
-  isPopular?: boolean;
-  perks: {
-    icon: "truck" | "book" | "gift";
-    text: string;
-  }[];
-  desc?: string;
-}
-
-const BUNDLE_OPTIONS: BundleOption[] = [
-  {
-    id: "1-bottle",
-    title: "1 Bottle",
-    subtitle: "1 bottle total | Save $27.99",
-    price: 31.96,
-    originalPrice: 59.95,
-    perks: [{ icon: "truck", text: "Free USA Shipping" }],
-    desc: "Refills Ship Monthly",
-  },
-  {
-    id: "2-get-1",
-    title: "Buy 2 Get 1 Free",
-    subtitle: "3 bottles total | Save $115.93",
-    price: 63.92,
-    originalPrice: 179.85,
-    isPopular: true,
-    perks: [
-      { icon: "truck", text: "Free USA Shipping" },
-      { icon: "book", text: "Free Anti-Bloating Protocol E-book" },
-    ],
-    desc: "Refills Ship Bi-Monthly",
-  },
-  {
-    id: "3-get-2",
-    title: "Buy 3 Get 2 Free",
-    subtitle: "5 bottles total | Save $203.87",
-    price: 95.88,
-    originalPrice: 299.75,
-    perks: [
-      { icon: "truck", text: "Free USA Shipping" },
-      { icon: "book", text: "Free Anti-Bloating Protocol E-book" },
-      { icon: "gift", text: "$20 Gift Card" },
-    ],
-    desc: "Refills Ship Every 12 Week",
-  },
-];
+import ProductFooter from "./ProductFooter";
+import { BUNDLE_OPTIONS } from "@/lib/data/data";
 
 const PerkIcon = ({ type }: { type: "truck" | "book" | "gift" }) => {
   const className = "h-5 w-5 text-[#4FA786] shrink-0";
@@ -78,7 +28,7 @@ export function BundleSelector() {
   }).format(deliveryDate);
 
   return (
-    <div>
+    <>
       <div className="w-full mt-3 bg-bg-cream rounded-xl">
         <div className="space-y-6 px-3 pt-3 pb-6">
           <div className="relative flex flex-col gap-3">
@@ -187,9 +137,9 @@ export function BundleSelector() {
       {/* Delivery Info Footer */}
       <div className="flex items-center justify-start gap-2 text-[16px] pt-4 pb-3">
         <Truck size={24} />
-        <span>
+        <span className="max-sm:text-[13px]">
           Delivered on{" "}
-          <span className="bg-[#008F5D] border border-[#008F5D] text-white px-2 py-1 rounded-sm">
+          <span className="bg-[#008F5D] border border-[#008F5D] text-white px-2 py-1 rounded-sm max-sm:py-0">
             {formattedDate}
           </span>{" "}
           with Express Shipping
@@ -206,6 +156,7 @@ export function BundleSelector() {
             xmlns="http://www.w3.org/2000/svg"
             width="23"
             height="23"
+            className="max-sm:w-4 max-sm:h-4"
             viewBox="0 0 23 23"
             fill="none"
             stroke="currentColor"
@@ -218,7 +169,7 @@ export function BundleSelector() {
             <path d="M21 12a9 9 0 0 1-9 9 9.75 9.75 0 0 1-6.74-2.74L3 16" />
             <path d="M8 16H3v5" />
           </svg>
-          <span className="text-[16px]">{selectedBundle?.desc}</span>
+          <span className="text-[16px] max-sm:text-[12px] text-black">{selectedBundle?.desc}</span>
         </div>
 
         {/* Separator */}
@@ -229,6 +180,7 @@ export function BundleSelector() {
             xmlns="http://www.w3.org/2000/svg"
             width="23"
             height="23"
+            className="max-sm:w-4 max-sm:h-4"
             viewBox="0 0 23 23"
             fill="none"
             stroke="currentColor"
@@ -239,9 +191,11 @@ export function BundleSelector() {
             <circle cx="12" cy="12" r="10" />
             <polyline points="12 6 12 12 16 14" />
           </svg>
-          <span className="text-[16px]">Stop or Cancel Anytime</span>
+          <span className="text-[16px] max-sm:text-[12px] text-black">Stop or Cancel Anytime</span>
         </div>
       </div>
-    </div>
+      {/* Product Footer */}
+      <ProductFooter />
+    </>
   );
 }

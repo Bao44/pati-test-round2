@@ -4,7 +4,7 @@ function HeroLeftSection() {
   return (
     <>
       {/* WEB */}
-      <div className="w-full max-w-147 max-lg:w-85 max-lg:px-8 max-sm:hidden">
+      <div className="w-full max-w-147 max-lg:w-85 max-sm:hidden">
         {/* Main image */}
         <div className="relative w-full">
           <img
@@ -13,9 +13,9 @@ function HeroLeftSection() {
             alt=""
           />
 
-          <div className="absolute top-2 right-2 md:top-4 md:right-4 w-20 md:w-30">
+          <div className="absolute top-2 right-2 max-lg:top-4 max-lg:-right-4 w-20 md:w-30">
             <img
-              className="w-full h-auto"
+              className="max-lg:w-20 max-lg:h-20 w-full h-auto"
               src="https://cdn.shopify.com/s/files/1/0917/5649/5191/files/nysale.png?v=1766822224"
               alt=""
             />
@@ -25,9 +25,9 @@ function HeroLeftSection() {
             className="absolute bottom-4 left-1/2 -translate-x-1/2 md:bottom-8 md:left-1/2 md:-translate-x-1/2 
                            flex items-center gap-2 md:gap-3 
                            bg-[#ffffffd9] border border-solid rounded-full 
-                           px-4 py-1.5 md:px-7 md:py-2 
+                           px-4 py-1.5 md:px-7 md:py-2
                            text-xs md:text-[16px] text-gray-600 font-medium 
-                           cursor-pointer whitespace-nowrap"
+                           cursor-pointer text-left leading-tight max-lg:w-full"
           >
             <img
               width={20}
@@ -36,7 +36,9 @@ function HeroLeftSection() {
               src="https://cdn.shopify.com/s/files/1/0917/5649/5191/files/leaves_1247958_1_cf2e7df4-c113-4c3a-be49-f876ec94d873.png?v=1766822629"
               alt=""
             />
-            Nutritional Information
+            <span>
+              Nutritional <br className="lg:hidden" /> Information
+            </span>
           </button>
         </div>
 

@@ -11,13 +11,14 @@ function HeroRightSection() {
         <img
           width={100}
           height={18}
+          className="max-sm:w-15 max-sm:h-2.75"
           src="https://cdn.shopify.com/s/files/1/0917/5649/5191/files/Frame_229.png?v=1752064359"
         />
-        <p> 4.8/5 Excellent | Based on 2381 Reviews</p>
+        <p className="max-sm:text-[13px]"> 4.8/5 Excellent | Based on 2381 Reviews</p>
       </div>
 
       {/* Title */}
-      <h1 className="text-[29px] mt-4">
+      <h1 className="text-[29px] mt-4 max-sm:text-[25px]">
         New Maximum Potency Formula - Lymphatic Drainage Capsules by Sculptique™
       </h1>
 
