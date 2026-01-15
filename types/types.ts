@@ -16,3 +16,14 @@ export interface AccordionItemProps {
   title: string;
   children: React.ReactNode;
 }
+
+export interface IngredientProps {
+  data: {
+    benefit: string;
+    name: string;
+    dosage: string;
+    image: string;
+    desc: string;
+    study:string;
+  };
+}

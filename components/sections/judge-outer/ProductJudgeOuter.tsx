@@ -1,5 +1,5 @@
 import BloatCard from "./components/BloatCard";
-import Stats from "./Stats";
+import Stats from "./components/Stats";
 
 export default function ProductJudgeOuter() {
   return (

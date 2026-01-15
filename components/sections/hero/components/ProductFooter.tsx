@@ -1,6 +1,6 @@
 import React from "react";
 import { AccordionItem } from "./TabProductFooter";
-import { INGREDIENTS } from "@/lib/data/data";
+import { INGREDIENTS } from "@/lib/data";
 
 export default function ProductFooter() {
   return (

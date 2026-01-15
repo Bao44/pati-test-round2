@@ -2,7 +2,7 @@
 
 import { useState } from "react";
 import { cn } from "@/lib/utils";
-import { AccordionItemProps } from "@/types/interface";
+import { AccordionItemProps } from "@/types/types";
 
 export function AccordionItem({ title, children }: AccordionItemProps) {
   const [isOpen, setIsOpen] = useState(false);

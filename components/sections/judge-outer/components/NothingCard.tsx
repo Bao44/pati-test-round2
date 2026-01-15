@@ -10,7 +10,7 @@ export default function NothingCard({
   return (
     <div className="flex h-full w-full flex-col bg-[#f7f7f7] pb-6 shadow-sm transition-shadow hover:shadow-md">
       <div className="relative w-full aspect-4/3 overflow-hidden">
-        <img src={url} alt={title} className="h-full w-full object-cover  max-sm:rounded-t-sm" />
+        <img src={url} alt={title} className="h-full w-full object-cover rounded-t-md" />
         <div className="absolute inset-0 bg-red-900/5 mix-blend-multiply" />
       </div>
 

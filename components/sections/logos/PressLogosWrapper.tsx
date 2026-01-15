@@ -1,4 +1,4 @@
-import { LOGOS } from "@/lib/data/data";
+import { LOGOS } from "@/lib/data";
 
 const logos = LOGOS;
 

@@ -4,7 +4,7 @@ import { useState } from "react";
 import { Truck, BookOpen, Gift } from "lucide-react";
 import { cn } from "@/lib/utils";
 import ProductFooter from "./ProductFooter";
-import { BUNDLE_OPTIONS } from "@/lib/data/data";
+import { BUNDLE_OPTIONS } from "@/lib/data";
 
 const PerkIcon = ({ type }: { type: "truck" | "book" | "gift" }) => {
   const className = "h-5 w-5 text-[#4FA786] shrink-0";

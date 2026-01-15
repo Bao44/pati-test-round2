@@ -1,9 +1,9 @@
-import Header from "./components/layout/Header";
-import HeroLeftSection from "./components/sessions/hero/HeroLeftSection";
-import HeroRightSection from "./components/sessions/hero/HeroRightSection";
-import NothingHasWorked from "./components/sessions/judge-outer/NothingHasWorked";
-import ProductJudgeOuter from "./components/sessions/judge-outer/ProductJudgeOuter";
-import PressLogosWrapper from "./components/sessions/logos/PressLogosWrapper";
+import Header from "@/components/layout/Header";
+import HeroSection from "@/components/sections/hero/HeroSection";
+import Ingredient from "@/components/sections/judge-outer/Ingredient";
+import NothingHasWorked from "@/components/sections/judge-outer/NothingHasWorked";
+import ProductJudgeOuter from "@/components/sections/judge-outer/ProductJudgeOuter";
+import PressLogosWrapper from "@/components/sections/logos/PressLogosWrapper";
 
 export default function Home() {
   return (
@@ -12,10 +12,7 @@ export default function Home() {
       <Header />
 
       {/* Hero Section */}
-      <div className="mx-auto max-w-7xl flex justify-between py-8 px-5 max-sm:px-3.5 gap-20 max-sm:flex-col max-xl:px-12.5">
-        <HeroLeftSection />
-        <HeroRightSection />
-      </div>
+      <HeroSection />
 
       {/* Logos Wrapper */}
       <PressLogosWrapper />
@@ -25,6 +22,9 @@ export default function Home() {
 
       {/* Nothing Has Worked */}
       <NothingHasWorked />
+
+      {/* Ingredient  */}
+      <Ingredient />
     </div>
   );
 }

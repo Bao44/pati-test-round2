@@ -3,7 +3,7 @@ import NothingCard from "./components/NothingCard";
 
 export default function NothingHasWorked() {
   return (
-    <div className="mt-14 pb-20 bg-bg-cream max-sm:mt-2">
+    <div className="mt-14 pb-18.75 bg-bg-cream max-sm:mt-2">
       <div className="mx-auto max-w-7xl px-5">
         {/* Title Section */}
         <h1 className="mb-12 text-center text-3xl md:text-4xl">
