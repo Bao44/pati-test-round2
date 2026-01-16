@@ -135,7 +135,7 @@ export default function StoriesCarousel() {
         />
 
         <div className="mt-10 flex flex-col items-center">
-          <button className="w-full md:w-auto bg-black text-white text-[18px] max-sm:text-[17px] py-4 px-20 max-sm:px-5 max-sm:py-3 rounded shadow-lg hover:bg-gray-800 transition-transform hover:scale-105">
+          <button className="w-full md:w-auto bg-black text-white text-[18px] max-sm:text-[17px] py-4 px-20 max-sm:px-5 max-sm:py-3 rounded cursor-pointer hover:bg-black/80">
             Try Lymphatic Drainage Risk-Free
           </button>
 

@@ -7,7 +7,7 @@ import React, { useState } from "react";
 import Conclude from "./Conclude";
 
 export default function FAQ() {
-  const [openIndexes, setOpenIndexes] = useState<number[]>([1]);
+  const [openIndexes, setOpenIndexes] = useState<number[]>([null as any]);
 
   const toggleFAQ = (index: number) => {
     if (openIndexes.includes(index)) {
