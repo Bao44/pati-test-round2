@@ -8,6 +8,7 @@ import NothingHasWorked from "@/components/sections/judge-outer/NothingHasWorked
 import ProductJudgeOuter from "@/components/sections/judge-outer/ProductJudgeOuter";
 import PressLogosWrapper from "@/components/sections/logos/PressLogosWrapper";
 import FAQ from "@/components/sections/questions/FAQ";
+import RootCause from "@/components/sections/root-cause/RootCause";
 import StoriesCarousel from "@/components/sections/stories/StoriesCarousel";
 
 export default function Home() {
@@ -45,6 +46,9 @@ export default function Home() {
 
       {/* Questions Section */}
       <FAQ />
+
+      {/* RootCause */}
+      <RootCause />
     </div>
   );
 }
