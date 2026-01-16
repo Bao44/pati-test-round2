@@ -7,6 +7,7 @@ import Ingredient from "@/components/sections/judge-outer/Ingredient";
 import NothingHasWorked from "@/components/sections/judge-outer/NothingHasWorked";
 import ProductJudgeOuter from "@/components/sections/judge-outer/ProductJudgeOuter";
 import PressLogosWrapper from "@/components/sections/logos/PressLogosWrapper";
+import FAQ from "@/components/sections/questions/FAQ";
 import StoriesCarousel from "@/components/sections/stories/StoriesCarousel";
 
 export default function Home() {
@@ -43,6 +44,7 @@ export default function Home() {
       <StoriesCarousel />
 
       {/* Questions Section */}
+      <FAQ />
     </div>
   );
 }
