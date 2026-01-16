@@ -235,3 +235,172 @@ export const INGREDIENTS_GRID = [
     study: "[Study: Triple-masked trial in 90 participants]",
   },
 ];
+
+export const RATING_STATS = {
+  average: 4.67,
+  total: 110,
+  distribution: [
+    { star: 5, count: 84, percent: "80%" },
+    { star: 4, count: 17, percent: "15%" },
+    { star: 3, count: 8, percent: "4%" },
+    { star: 2, count: 1, percent: "1%" },
+    { star: 1, count: 0, percent: "0%" },
+  ],
+};
+
+export const REVIEWS_DATA = [
+  {
+    id: 1,
+    author: "Anonymous",
+    verified: true,
+    date: "12/08/2025",
+    rating: 5,
+    content:
+      "Pretty sure I'm seeing improvement in the smoothness of my skin after 30 days. Will continue with confidence it's working.",
+  },
+  {
+    id: 2,
+    author: "Anonymous",
+    verified: true,
+    date: "12/01/2025",
+    rating: 5,
+    content: "One month and I've already seen a difference!",
+  },
+  {
+    id: 3,
+    author: "Donabeth Houx",
+    verified: true,
+    date: "11/23/2025",
+    rating: 5,
+    content:
+      "I LOVE THEM! My legs have gone from late stage 2 to late one!!! Oh my gosh! It's a miracle! I no longer have to worry about elephantitus in my future! Thank you so much!!!!!",
+  },
+  {
+    id: 4,
+    author: "Dawn Camacho",
+    verified: true,
+    date: "11/17/2025",
+    rating: 4,
+    content:
+      "It took me about 60 days to notice a difference in smoothness. My husband noticed which is why I purchased another round. I'm happy.",
+  },
+  {
+    id: 5,
+    author: "Anonymous",
+    verified: true,
+    date: "11/17/2025",
+    rating: 4,
+    content: "I have noticed a difference on my swelling.",
+  },
+  {
+    id: 6,
+    author: "Anonymous",
+    verified: true,
+    date: "11/10/2025",
+    rating: 5,
+    content: "starting to see results after one bottle",
+  },
+  {
+    id: 7,
+    author: "Anonymous",
+    verified: true,
+    date: "11/10/2025",
+    rating: 5,
+    content: "starting to see results after one bottle",
+  },
+  {
+    id: 8,
+    author: "Anonymous",
+    verified: true,
+    date: "11/10/2025",
+    rating: 5,
+    content: "starting to see results after one bottle",
+  },
+  {
+    id: 9,
+    author: "Anonymous",
+    verified: true,
+    date: "11/10/2025",
+    rating: 5,
+    content: "starting to see results after one bottle",
+  },
+  {
+    id: 10,
+    author: "Anonymous",
+    verified: true,
+    date: "11/10/2025",
+    rating: 5,
+    content: "starting to see results after one bottle",
+  },
+  {
+    id: 11,
+    author: "Anonymous",
+    verified: true,
+    date: "11/10/2025",
+    rating: 5,
+    content: "starting to see results after one bottle",
+  },
+];
+
+export const STORIES = [
+  {
+    id: 1,
+    src: "https://cdn.shopify.com/videos/c/o/v/014b7db24d12443791bd22d345637ccc.mp4",
+    image:
+      "//trysculptique.com/cdn/shop/files/Screenshot_2025-07-14_at_12.40.11.png?v=1752486039",
+  },
+  {
+    id: 2,
+    src: "https://cdn.shopify.com/videos/c/o/v/4eecdc1058f349628e1c50ba81112b54.mov",
+    image:
+      "//trysculptique.com/cdn/shop/files/Screenshot_2025-07-14_at_16.12.02.png?v=1752498744",
+  },
+  {
+    id: 3,
+    src: "https://cdn.shopify.com/videos/c/o/v/2967808b09114feb9616d295fd2f3557.mp4",
+    image:
+      "//trysculptique.com/cdn/shop/files/Screenshot_2025-07-14_at_15.43.04.png?v=1752497038",
+  },
+  {
+    id: 4,
+    src: "https://cdn.shopify.com/videos/c/o/v/88efaa94523742bdb8f980d66600cde2.mp4",
+    image:
+      "//trysculptique.com/cdn/shop/files/Screenshot_2025-07-14_at_15.43.34.png?v=1752497063",
+  },
+  {
+    id: 5,
+    src: "https://cdn.shopify.com/videos/c/o/v/a7bce8da322747e08ef1ce7c87317c30.mp4",
+    image:
+      "//trysculptique.com/cdn/shop/files/Screenshot_2025-07-14_at_16.11.50.png?v=1752498777",
+  },
+  {
+    id: 6,
+    src: "https://cdn.shopify.com/videos/c/o/v/3a117937ae264508b440a6972ebcb6a1.mp4",
+    image:
+      "//trysculptique.com/cdn/shop/files/Screenshot_2025-07-14_at_15.43.10.png?v=1752497092",
+  },
+  {
+    id: 7,
+    src: "https://cdn.shopify.com/videos/c/o/v/27085ed5be5c4c38ad579f0fdae8aefa.mp4",
+    image:
+      "//trysculptique.com/cdn/shop/files/Screenshot_2025-07-14_at_15.44.54.png?v=1752497118",
+  },
+  {
+    id: 8,
+    src: "https://cdn.shopify.com/videos/c/o/v/a4ab9e815f3446ea8b84292627ec2a10.mp4",
+    image:
+      "//trysculptique.com/cdn/shop/files/Screenshot_2025-07-14_at_15.46.37.png?v=1752497216",
+  },
+  {
+    id: 9,
+    src: "https://cdn.shopify.com/videos/c/o/v/68b2aa06fab44d968723e052a14d87d5.mp4",
+    image:
+      "//trysculptique.com/cdn/shop/files/Screenshot_2025-07-14_at_15.45.36.png?v=1752497166",
+  },
+  {
+    id: 10,
+    src: "https://cdn.shopify.com/videos/c/o/v/0ec8de99a9c3459da6c53e18c0eeab3c.mp4",
+    image:
+      "//trysculptique.com/cdn/shop/files/Screenshot_2025-07-14_at_15.47.12.png?v=1752497252",
+  },
+];
