@@ -1,36 +1,79 @@
-This is a [Next.js](https://nextjs.org) project bootstrapped with [`create-next-app`](https://nextjs.org/docs/app/api-reference/cli/create-next-app).
+# PATI Test Round 2
 
-## Getting Started
-
-First, run the development server:
+**Link bài test**:
 
 ```bash
-npm run dev
-# or
-yarn dev
-# or
-pnpm dev
-# or
-bun dev
+https://pati-test-round2.vercel.app/
 ```
 
-Open [http://localhost:3000](http://localhost:3000) with your browser to see the result.
+**Hoặc**:
+Click vào [đây][1] để xem.
 
-You can start editing the page by modifying `app/page.tsx`. The page auto-updates as you edit the file.
+[1]: https://pati-test-round2.vercel.app/
 
-This project uses [`next/font`](https://nextjs.org/docs/app/building-your-application/optimizing/fonts) to automatically optimize and load [Geist](https://vercel.com/font), a new font family for Vercel.
+**Clone mã nguồn**:
 
-## Learn More
+```bash
+git clone https://github.com/Bao44/pati-test-round2.git
+cd pati-test-round2
+```
 
-To learn more about Next.js, take a look at the following resources:
+## Tech Stack
 
-- [Next.js Documentation](https://nextjs.org/docs) - learn about Next.js features and API.
-- [Learn Next.js](https://nextjs.org/learn) - an interactive Next.js tutorial.
+- **Framework:** [Next.js 16](https://nextjs.org/)
+- **Language:** [TypeScript](https://www.typescriptlang.org/)
+- **Styling:** [Tailwind CSS](https://tailwindcss.com/)
+- **Icons:** [Lucide React](https://lucide.dev/)
+- **Animations:** CSS Transitions & Tailwind utility classes
+- **Notifications:** [React Toastify](https://fkhadra.github.io/react-toastify/)
 
-You can check out [the Next.js GitHub repository](https://github.com/vercel/next.js) - your feedback and contributions are welcome!
+## Key Features
 
-## Deploy on Vercel
+### 1. Hero Section
 
-The easiest way to deploy your Next.js app is to use the [Vercel Platform](https://vercel.com/new?utm_medium=default-template&filter=next.js&utm_source=create-next-app&utm_campaign=create-next-app-readme) from the creators of Next.js.
+- **Infinite Loop Image Slider:** Custom-built slider with seamless looping and synchronized thumbnail navigation.
+- **Swipe Support:** Full touch event handling for mobile devices.
+- **Product Bundle Selector:** Interactive pricing cards with dynamic selection states.
 
-Check out our [Next.js deployment documentation](https://nextjs.org/docs/app/building-your-application/deploying) for more details.
+### 2. Video Stories Carousel
+
+- **Native-like Scroll:** Smooth horizontal scrolling with snap physics.
+- **Smart Controls:**
+  - Drag-to-scroll functionality on Desktop.
+  - Auto-hiding Play/Pause buttons.
+  - Progress bar indicator.
+- **Performance:** Optimized video loading with `poster` images.
+
+### 3. Customer Reviews
+
+- **Sorting & Filtering:** Sort by rating, date, or media type.
+- **Pagination:** Client-side pagination logic.
+- **Review Form:** Interactive modal for submitting reviews with file upload UI.
+
+### 4. Interactive Components
+
+- **Accordion FAQ:** Smooth expand/collapse animations.
+- **Modals:** Nutritional Information popup with body scroll locking.
+- **Infinite Logo Marquee:** Auto-scrolling press logos using CSS masks.
+
+## Project Structure
+
+The project follows a **Feature-based** architecture for better scalability and maintainability.
+
+```text
+src/
+├── app/                   # Next.js App Router pages
+├── components/
+│   ├── layout/            # Global layout (Header, Footer)
+│   ├── ui/                # Atomic components (Buttons, Modals, Stars)
+│   └── sections/          # Page sections (Feature-based)
+│       ├── hero/          # Hero logic (Carousel, Bundle Selector)
+│       ├── feedback/      # Reviews & Expert Advice
+│       ├── science-proof/ # Ingredients & Stats
+│       ├── stories/       # Video Stories Carousel
+│       └── ...
+├── lib/
+│   ├── data.ts            # Static data (mock API response)
+│   └── utils.ts           # Helper functions (cn, formatters)
+└── types/                 # TypeScript interfaces
+```
