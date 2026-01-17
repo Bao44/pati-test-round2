@@ -3,6 +3,7 @@
 import React, { useRef, useState } from "react";
 import Controls from "./components/Controls";
 import ScrollVideo from "./components/ScrollVideo";
+import { toast } from "react-toastify";
 
 export default function StoriesCarousel() {
   const scrollRef = useRef<HTMLDivElement>(null);
@@ -96,7 +97,7 @@ export default function StoriesCarousel() {
 
   return (
     <section className="bg-bg-cream py-14 max-sm:py-10 select-none">
-      <div className="mx-auto max-w-7xl px-5">
+      <div className="mx-auto max-w-7xl px-5 ">
         <div className="text-center">
           <img
             width={300}
@@ -107,7 +108,7 @@ export default function StoriesCarousel() {
           />
         </div>
         <div className="text-center mb-5">
-          <h2 className="font-serif text-2xl md:text-[33px] text-gray-900 mt-4">
+          <h2 className="font-serif text-2xl md:text-[33px] text-gray-900 mt-4 max-md:px-0 max-lg:px-5">
             See The Stories of Sculptique™ Women Firsthand
           </h2>
         </div>
@@ -135,7 +136,10 @@ export default function StoriesCarousel() {
         />
 
         <div className="mt-10 flex flex-col items-center">
-          <button className="w-full md:w-auto bg-black text-white text-[18px] max-sm:text-[17px] py-4 px-20 max-sm:px-5 max-sm:py-3 rounded cursor-pointer hover:bg-black/80">
+          <button
+            onClick={() => toast.success("Handle Clicked", { autoClose: 2000 })}
+            className="w-full md:w-auto bg-black text-white text-[18px] max-sm:text-[17px] py-4 px-20 max-sm:px-5 max-sm:py-3 rounded cursor-pointer hover:bg-black/80"
+          >
             Try Lymphatic Drainage Risk-Free
           </button>
 

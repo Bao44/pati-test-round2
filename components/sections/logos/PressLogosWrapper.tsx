@@ -1,13 +1,11 @@
 import { LOGOS } from "@/lib/data";
 
-const logos = LOGOS;
-
 export default function PressLogosWrapper() {
   return (
     <div className="w-full bg-bg-cream py-4 overflow-hidden">
       <div className="container mx-auto px-4 md:px-6">
         {/* Title */}
-        <h2 className="text-center text-2xl text-gray-900 mb-6 font-medium">
+        <h2 className="text-center text-2xl max-sm:text-lg max-lg:text-xl text-gray-900 mb-6 max-sm:mb-4 font-medium">
           As Seen In
         </h2>
 
@@ -15,7 +13,7 @@ export default function PressLogosWrapper() {
         <div className="relative w-full ">
           <div className="flex w-max items-center">
             <div className="flex animate-infinite-scroll items-center gap-12 pr-12 md:gap-24 md:pr-24">
-              {logos.map((logo) => (
+              {LOGOS.map((logo) => (
                 <img
                   key={logo.id}
                   src={logo.src}
@@ -29,7 +27,7 @@ export default function PressLogosWrapper() {
               className="flex animate-infinite-scroll items-center gap-12 pr-12 md:gap-24 md:pr-24"
               aria-hidden="true"
             >
-              {logos.map((logo) => (
+              {LOGOS.map((logo) => (
                 <img
                   key={`${logo.id}-duplicate`}
                   src={logo.src}

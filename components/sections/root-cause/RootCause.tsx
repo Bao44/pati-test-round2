@@ -1,3 +1,7 @@
+"use client";
+
+import { toast } from "react-toastify";
+
 export default function RootCause() {
   return (
     <section className="bg-bg-cream py-12 lg:py-14 px-10 max-md:px-4">
@@ -22,12 +26,12 @@ export default function RootCause() {
             />
 
             {/* Headline */}
-            <h2 className="text-[32px] max-sm:text-[26px] text-gray-900">
+            <h2 className="text-[32px] max-sm:text-[26px] text-gray-900 leading-tight">
               Stop Masking Symptoms. Start Restoring Root Cause.
             </h2>
 
             {/* Body Text */}
-            <div className="space-y-2 text-lg text-gray-900 leading-6">
+            <div className="space-y-2 text-[19px] text-gray-900 leading-6">
               <p>
                 You deserve to feel like yourself again. To wake up without
                 puffiness. To see your ankles. To look in the mirror and
@@ -52,7 +56,12 @@ export default function RootCause() {
 
             {/* CTA Button & Guarantee */}
             <div className="pt-2 w-full">
-              <button className="w-full sm:w-auto bg-black text-white text-[18px] max-sm:text-[17px] py-4 px-20 max-sm:px-2 max-sm:py-2 rounded shadow-lg hover:bg-black/70 cursor-pointer">
+              <button
+                onClick={() =>
+                  toast.success("Handle Clicked", { autoClose: 2000 })
+                }
+                className="w-full sm:w-auto bg-black text-white text-[18px] max-sm:text-[17px] py-4 px-20 max-sm:px-2 max-sm:py-2 rounded shadow-lg hover:bg-black/70 cursor-pointer"
+              >
                 Try Lymphatic Drainage Risk-Free
               </button>
 

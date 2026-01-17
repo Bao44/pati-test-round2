@@ -39,8 +39,8 @@ export default function IngredientCard({ data }: IngredientProps) {
 
           {/* Name & Toggle Icon */}
           <div className="flex w-full items-center justify-between gap-2">
-            <div>
-              <h3 className="text-[15px] sm:text-[17px] text-black font-bold text-left">
+            <div className="text-black font-extrabold">
+              <h3 className="text-[15px] sm:text-[17px] text-left">
                 {data.name} <span>({data.dosage})</span>
               </h3>
             </div>

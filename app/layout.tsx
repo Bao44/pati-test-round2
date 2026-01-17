@@ -1,6 +1,7 @@
 import type { Metadata } from "next";
 import { Nunito, Lora } from "next/font/google";
 import "./globals.css";
+import { ToastContainer } from "react-toastify";
 
 const nunito = Nunito({
   subsets: ["latin"],
@@ -27,9 +28,8 @@ export default function RootLayout({
 }>) {
   return (
     <html lang="en">
-      <body
-        className={`${nunito.variable} ${lora.variable}`}
-      >
+      <body className={`${nunito.variable} ${lora.variable}`}>
+        <ToastContainer />
         {children}
       </body>
     </html>

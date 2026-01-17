@@ -1,3 +1,7 @@
+"use client";
+
+import { toast } from "react-toastify";
+
 export default function ExpertAdvice() {
   return (
     <div className="bg-white max-sm:bg-gray-100 py-12 md:py-14">
@@ -5,18 +9,18 @@ export default function ExpertAdvice() {
         {/* CARD CONTAINER */}
         <div className="flex flex-col sm:flex-row overflow-hidden rounded-xl bg-gray-100 max-sm:bg-white">
           {/* LEFT TEXT CONTENT */}
-          <div className="flex flex-1 flex-col justify-center p-8 lg:w-1/2 lg:pr-8">
+          <div className="flex flex-1 flex-col justify-center p-8 max-sm:px-4 lg:w-1/2 lg:pr-8">
             {/* Date */}
             <p className="mb-2 text-md text-gray-500">July 4th, 2025</p>
 
             {/* Headline */}
-            <h3 className="mb-6 text-gray-900 text-[33px] leading-tight">
+            <h3 className="mb-6 text-gray-900 text-[33px] max-sm:text-[24px] leading-tight">
               Expert Advice from Dr. Emily Chen of a Premier New York Skin
               Clinic
             </h3>
 
             {/* Quote / Body Text */}
-            <div className="space-y-4 text-[19px] leading-6 text-gray-900">
+            <div className="space-y-4 text-[19px] max-sm:text-[18px] leading-6 text-black">
               <p>
                 “Your nutrition plays a powerful role in your appearance. If
                 your body is missing key vitamins and nutrients, it can’t
@@ -34,7 +38,12 @@ export default function ExpertAdvice() {
 
             {/* CTA Button */}
             <div className="mt-4">
-              <button className="max-w-full rounded-sm bg-black px-24 max-sm:px-5 py-4 text-[18px] max-sm:text-sm text-white md:w-auto w-full cursor-pointer hover:bg-black/80 transition ">
+              <button
+                onClick={() =>
+                  toast.success("Handle Clicked", { autoClose: 2000 })
+                }
+                className="max-w-full rounded-sm bg-black px-24 max-sm:px-3 py-4 text-[18px] max-sm:text-[15px] text-white md:w-auto w-full cursor-pointer hover:bg-black/80 transition "
+              >
                 Try Lymphatic Drainage Risk-Free
               </button>
             </div>

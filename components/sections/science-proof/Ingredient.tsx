@@ -3,7 +3,7 @@ import IngredientCard from "./components/IngredientCard";
 
 export default function Ingredient() {
   return (
-    <div className="mt-8.75 pb-16.5 bg-bg-cream max-sm:mt-10">
+    <div className="mt-8.75 pb-16.5 max-sm:pb-10 bg-bg-cream max-sm:mt-10">
       {" "}
       <div className="mx-auto max-w-7xl px-5">
         {/* TITLE SECTION */}
@@ -14,7 +14,7 @@ export default function Ingredient() {
               That Restores What Hormones Once Maintained
             </span>
           </h2>
-          <p className="text-black leading-relaxed max-w-3xl mx-auto text-lg  max-sm:text-[16px]">
+          <p className="text-black leading-6 max-w-3xl mx-auto text-lg  max-sm:text-[15px] max-sm:px-4">
             Sculptique is the only formula that addresses ALL 6 mechanisms of
             lymphatic dysfunction simultaneously—not with symbolic doses, but
             with therapeutic amounts based on clinical research.
@@ -44,6 +44,17 @@ export default function Ingredient() {
             height={480}
             src="https://trysculptique.com/cdn/shop/files/Frame_1000003583_2.png?v=1760697982"
             alt=""
+            className="max-sm:hidden"
+          />
+        </div>
+
+        <div className="flex justify-center">
+          <img
+            width={580}
+            height={480}
+            src="https://trysculptique.com/cdn/shop/files/Frame_1000003583_3.png?v=1760697982"
+            alt=""
+            className="max-sm:block hidden"
           />
         </div>
       </div>

@@ -1,6 +1,6 @@
 export default function Conclude() {
   return (
-    <div className="mx-auto max-w-7xl px-5 max-sm:px-10 max-lg:px-20 max-xl:px-22 flex items-center justify-between mt-33 max-sm:mt-20 max-sm:flex-col gap-8">
+    <div className="mx-auto max-w-7xl px-5 max-sm:px-10 max-lg:px-20 max-xl:px-22 flex items-center justify-between mt-33 max-sm:mt-20 max-sm:flex-col max-sm:gap-0 gap-8">
       {/* CỘT TRÁI */}
       <div className="sm:w-2xl max-sm:text-center">
         <h2 className="text-[32px] leading-tight max-sm:text-[24px]">

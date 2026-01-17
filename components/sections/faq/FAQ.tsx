@@ -5,9 +5,10 @@ import { cn } from "@/lib/utils";
 import { ChevronDown, ChevronUp } from "lucide-react";
 import React, { useState } from "react";
 import Conclude from "./Conclude";
+import { toast } from "react-toastify";
 
 export default function FAQ() {
-  const [openIndexes, setOpenIndexes] = useState<number[]>([null as any]);
+  const [openIndexes, setOpenIndexes] = useState<number[]>([]);
 
   const toggleFAQ = (index: number) => {
     if (openIndexes.includes(index)) {
@@ -18,10 +19,10 @@ export default function FAQ() {
   };
 
   return (
-    <section className="py-18 max-sm:py-14 bg-white">
+    <section className="py-18 max-sm:py-12 bg-white">
       <div className="mx-auto max-w-4xl px-8 max-sm:px-4">
         {/* HEADER */}
-        <h2 className="mb-4 max-sm:mb-2 text-center font-serif text-gray-900 text-[33px] max-sm:text-2xl max-sm:px-4">
+        <h2 className="mb-4 max-sm:mb-2 text-center text-gray-900 text-[33px] max-sm:text-2xl max-sm:px-3">
           Frequently Asked Questions
         </h2>
 
@@ -68,7 +69,10 @@ export default function FAQ() {
 
         {/* FOOTER CTA */}
         <div className="mt-6 flex flex-col items-center">
-          <button className="w-full md:w-auto bg-black text-white text-[18px] py-4 px-23 max-sm:px-2 max-sm:text-[16px] rounded hover:bg-black/70 cursor-pointer">
+          <button
+            onClick={() => toast.success("Handle Clicked", { autoClose: 2000 })}
+            className="w-full md:w-auto bg-black text-white text-[18px] py-4 px-23 max-sm:px-2 max-sm:text-[16px] rounded hover:bg-black/70 cursor-pointer"
+          >
             Try Lymphatic Drainage Risk-Free
           </button>
 

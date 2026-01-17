@@ -106,7 +106,7 @@ export default function Stats() {
         </div>
 
         {/* TEXT CONTENT */}
-        <div className="w-full">
+        <div className="w-full leading-6">
           <b className="block mb-1">
             And it accumulates. Day after day. Week after week.
           </b>
@@ -122,7 +122,7 @@ export default function Stats() {
               sitting there at noon. At dinner. While you're trying to fall
               asleep.
             </p>
-            <ul className="text-sale-dark font-semibold text-lg mt-2">
+            <ul className="text-sale-dark text-lg mt-2">
               {[
                 "That's why you're bloated.",
                 "That's why your ankles swell.",

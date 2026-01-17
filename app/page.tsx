@@ -3,11 +3,11 @@ import CustomerReviews from "@/components/sections/feedback/CustomerReviews";
 import ExpertAdvice from "@/components/sections/feedback/ExpertAdvice";
 import GuaranteeFeatures from "@/components/sections/feedback/GuaranteeFeatures";
 import HeroSection from "@/components/sections/hero/HeroSection";
-import Ingredient from "@/components/sections/judge-outer/Ingredient";
-import NothingHasWorked from "@/components/sections/judge-outer/NothingHasWorked";
-import ProductJudgeOuter from "@/components/sections/judge-outer/ProductJudgeOuter";
+import Ingredient from "@/components/sections/science-proof/Ingredient";
+import NothingHasWorked from "@/components/sections/science-proof/NothingHasWorked";
+import ProductJudgeOuter from "@/components/sections/science-proof/ProductJudgeOuter";
 import PressLogosWrapper from "@/components/sections/logos/PressLogosWrapper";
-import FAQ from "@/components/sections/questions/FAQ";
+import FAQ from "@/components/sections/faq/FAQ";
 import RootCause from "@/components/sections/root-cause/RootCause";
 import StoriesCarousel from "@/components/sections/stories/StoriesCarousel";
 

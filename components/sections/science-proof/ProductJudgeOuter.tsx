@@ -1,13 +1,36 @@
 import BloatCard from "./components/BloatCard";
 import Stats from "./components/Stats";
 
+const BLOAT_SYMPTOMS = [
+  {
+    url: "https://trysculptique.com/cdn/shop/files/Untitled_design_3.png?v=1760689800",
+    desc: "Your stomach is flat in the morning, but by evening you look six months pregnant.",
+  },
+  {
+    url: "https://trysculptique.com/cdn/shop/files/Untitled_design_3_1.png?v=1760689799",
+    desc: 'Your ankles disappear into "kankles" by the end of the day.',
+  },
+  {
+    url: "https://trysculptique.com/cdn/shop/files/Untitled_design_4.png?v=1760689801",
+    desc: "That dimpled, cottage cheese texture on your thighs won't go away no matter what you try.",
+  },
+  {
+    url: "https://trysculptique.com/cdn/shop/files/Untitled_design_4_1.png?v=1760689799",
+    desc: "You feel foggy and exhausted even after a full night's sleep.",
+  },
+  {
+    url: "https://trysculptique.com/cdn/shop/files/Untitled_design_3_2.png?v=1760689799",
+    desc: "You wake up stiff and achy, like your body aged overnight.",
+  },
+];
+
 export default function ProductJudgeOuter() {
   return (
     <div className="pt-18 mx-auto max-w-7xl px-5 max-sm:px-3.5 max-sm:pt-10 mb-18 max-sm:mb-8 max-xl:px-12.5">
       {" "}
       {/* TITLE */}
-      <div className="text-center max-w-3xl mx-auto mb-8 max-sm:text-xs">
-        <h1 className="text-[32px] leading-tight max-sm:text-[26px]">
+      <div className="text-center max-w-3xl mx-auto max-lg:px-5 max-md:px-0 mb-8 max-sm:text-xs">
+        <h1 className="text-[32px] leading-tight max-sm:text-[25px]">
           Why Your{" "}
           <span className="text-primary">
             Bloating, Brain Fog & Swollen Legs
@@ -21,26 +44,9 @@ export default function ProductJudgeOuter() {
       </div>
       {/* WHY BLOAT CARD*/}
       <div className="grid grid-cols-1 sm:grid-cols-5 gap-4">
-        <BloatCard
-          url="https://trysculptique.com/cdn/shop/files/Untitled_design_3.png?v=1760689800"
-          desc="Your stomach is flat in the morning, but by evening you look six months pregnant."
-        />
-        <BloatCard
-          url="https://trysculptique.com/cdn/shop/files/Untitled_design_3_1.png?v=1760689799"
-          desc='Your ankles disappear into "kankles" by the end of the day.'
-        />
-        <BloatCard
-          url="https://trysculptique.com/cdn/shop/files/Untitled_design_4.png?v=1760689801"
-          desc="That dimpled, cottage cheese texture on your thighs won't go away no matter what you try."
-        />
-        <BloatCard
-          url="https://trysculptique.com/cdn/shop/files/Untitled_design_4_1.png?v=1760689799"
-          desc="You feel foggy and exhausted even after a full night's sleep."
-        />
-        <BloatCard
-          url="https://trysculptique.com/cdn/shop/files/Untitled_design_3_2.png?v=1760689799"
-          desc="You wake up stiff and achy, like your body aged overnight."
-        />
+        {BLOAT_SYMPTOMS.map((item, index) => (
+          <BloatCard key={index} {...item} />
+        ))}
       </div>
       {/* image */}
       <div className="">

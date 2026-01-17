@@ -1,5 +1,5 @@
 import React from "react";
-import { Star, Check, User } from "lucide-react";
+import { Star } from "lucide-react";
 import ReviewUserAvatar from "@/components/ui/ReviewUserAvatar";
 
 export default function ReviewCard({ data }: any) {
@@ -37,7 +37,7 @@ export default function ReviewCard({ data }: any) {
       </div>
 
       {/* Content */}
-      <p className="text-gray-900 text-[16px] leading-relaxed">
+      <p className="text-gray-900 text-[16px] leading-5.5">
         {data.content}
       </p>
     </div>

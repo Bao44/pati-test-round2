@@ -5,6 +5,7 @@ import { Truck, BookOpen, Gift } from "lucide-react";
 import { cn } from "@/lib/utils";
 import ProductFooter from "./ProductFooter";
 import { BUNDLE_OPTIONS } from "@/lib/data";
+import { toast } from "react-toastify";
 
 const PerkIcon = ({ type }: { type: "truck" | "book" | "gift" }) => {
   const className = "h-5 w-5 text-[#4FA786] shrink-0";
@@ -87,7 +88,7 @@ export function BundleSelector() {
                           <p className="text-md font-semibold text-gray-900 leading-tight">
                             {bundle.title}
                           </p>
-                          <p className="text-xs text-gray-800 font-medium">
+                          <p className="text-xs text-gray-800">
                             {bundle.subtitle}
                           </p>
                         </div>
@@ -146,7 +147,7 @@ export function BundleSelector() {
         </span>
       </div>
       {/* ADD TO CART */}
-      <button className="bg-black w-full text-white text-[18px] font-black rounded-lg p-3 hover:bg-black/80 cursor-pointer">
+      <button onClick={() => toast.success("Added to cart!", {autoClose: 2000})} className="bg-black w-full text-white text-[18px] font-black rounded-lg p-3 hover:bg-black/80 cursor-pointer">
         ADD TO CART
       </button>
       {/* Description add cart */}
